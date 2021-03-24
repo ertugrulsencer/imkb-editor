@@ -178,4 +178,38 @@ h1 {
 .editor .buttons > div button:hover {
   border-color: #323292;
 }
+
+.editor #printText {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  background: #f8f8f8;
+  border-radius: 0.25rem;
+  border: 3px solid #323292;
+  color: #323292;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0.75rem;
+  text-align: center;
+  cursor: alias;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.editor #printText:hover {
+  background: rgba(50, 50, 146, 0.2);
+}
+
+.editor #printText i {
+  color: #323292;
+  margin-right: 1rem;
+}
 /*# sourceMappingURL=style.css.map */

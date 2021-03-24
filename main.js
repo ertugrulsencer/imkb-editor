@@ -11,6 +11,7 @@ const elements = {
   btnUnderLine: document.querySelector("#btnUnderLine"),
   btnItalic: document.querySelector("#btnItalic"),
   btnBold: document.querySelector("#btnBold"),
+  btnPrint: document.querySelector("#printText"),
 };
 const fonts = ["Arial", "Times New Roman", "Poppins", "Lobster"];
 const clearClassAlignBtns = () => {
@@ -99,4 +100,7 @@ elements.btnBold.addEventListener("click", (e) => {
     elements.btnBold.classList.remove("active");
   }
 });
-console.log(elements.textArea.style);
+/* Çıktı Al */
+elements.btnPrint.addEventListener("click", (e) => {
+  window.print();
+});

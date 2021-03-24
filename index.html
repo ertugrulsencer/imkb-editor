@@ -10,12 +10,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <style type="text/css" media="print">
+      .no-print {
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <h1>IMKB Editör</h1>
       <div class="editor">
-        <div class="buttons">
+        <div class="buttons no-print">
           <div class="text-color">
             <span>Yazı Boyutu:</span>
             <input min="8" max="42" type="number" id="textSize" value="12" />
@@ -79,6 +84,10 @@
           Repellat perspiciatis voluptatem, omnis fugit optio atque sit labore
           facere rerum?
         </p>
+        <button id="printText" class="no-print">
+          <i class="fas fa-print"></i>
+          Çıktı Al
+        </button>
       </div>
     </div>
     <script src="./main.js"></script>

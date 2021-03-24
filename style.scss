@@ -132,4 +132,28 @@ h1 {
       }
     }
   }
+  #printText {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    background: #f8f8f8;
+    border-radius: 0.25rem;
+    border: 3px solid #323292;
+    color: #323292;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem;
+    text-align: center;
+    cursor: alias;
+    transition: background 300ms ease-in-out;
+    &:hover {
+      background: rgba(#323292, 0.2);
+    }
+    i {
+      color: #323292;
+      margin-right: 1rem;
+    }
+  }
 }
