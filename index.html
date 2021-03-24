@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMKB Editör</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>IMKB Editör</h1>
+      <div class="editor">
+        <div class="buttons">
+          <div class="text-color">
+            <span>Yazı Boyutu:</span>
+            <input min="8" max="42" type="number" id="textSize" value="12" />
+          </div>
+          <div class="text-color">
+            <span>Yazı Fontu:</span>
+            <select id="textFont">
+              <option value="0">Arial</option>
+              <option value="1">Times New Roman</option>
+              <option value="2">Poppins</option>
+              <option value="3">Lobster</option>
+            </select>
+          </div>
+          <div class="text-color">
+            <span>Yazı Rengi:</span>
+            <input type="color" id="textColor" value="#323292" />
+          </div>
+          <div class="background-color">
+            <span>Arkaplan Rengi:</span>
+            <input type="color" id="backgroundColor" value="#fcfcfc" />
+          </div>
+          <div class="text-align">
+            <span>Hizalama:</span>
+            <button class="active" id="btnAlignLeft">
+              <i class="fas fa-align-left"></i>
+            </button>
+            <button id="btnAlignCenter">
+              <i class="fas fa-align-center"></i>
+            </button>
+            <button id="btnAlignRight">
+              <i class="fas fa-align-right"></i>
+            </button>
+            <button id="btnAlignJustify">
+              <i class="fas fa-align-justify"></i>
+            </button>
+          </div>
+          <div class="font-style">
+            <span>Yazı Stili:</span>
+            <button id="btnUnderLine">
+              <i class="fas fa-underline"></i>
+            </button>
+            <button id="btnItalic">
+              <i class="fas fa-italic"></i>
+            </button>
+            <button id="btnBold">
+              <i class="fas fa-bold"></i>
+            </button>
+          </div>
+        </div>
+        <p id="text" contenteditable>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure modi
+          atque iusto? Fuga at sed ullam quam repellendus reiciendis illo
+          nesciunt nostrum obcaecati inventore doloribus, dolores dolore numquam
+          eaque necessitatibus odio tempore, nulla delectus omnis nam quod quia.
+          Ex nobis atque voluptatem facere provident. Eos beatae quam, quia
+          corrupti quos assumenda odio minus unde a esse repellendus earum
+          dignissimos quibusdam sapiente nemo suscipit delectus asperiores
+          fugiat quae sed expedita possimus perspiciatis dolorum. Culpa officia
+          quibusdam ut nostrum odio repellendus possimus soluta dignissimos
+          recusandae sapiente doloribus veritatis voluptatum, illo dolor.
+          Repellat perspiciatis voluptatem, omnis fugit optio atque sit labore
+          facere rerum?
+        </p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

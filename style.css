@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.wrapper {
+  margin: auto;
+  width: 90%;
+  max-width: 1280px;
+}
+
+h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-weight: 300;
+  color: #323292;
+  font-family: "Poppins", sans-serif;
+}
+
+.editor #text {
+  padding: 1rem 0.75rem;
+  border: 3px solid #323292;
+  background: #fcfcfc;
+  color: #323292;
+  border-radius: 0.25rem;
+  max-height: 82vh;
+  overflow-y: auto;
+  font-family: "Arial";
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  font-size: 12pt;
+  line-height: 150%;
+  caret-color: #f36614;
+}
+
+.editor #text:focus {
+  border-color: #f36614;
+}
+
+.editor #text::-moz-selection {
+  background-color: #f36614;
+  color: #f8f8f8;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.editor #text::selection {
+  background-color: #f36614;
+  color: #f8f8f8;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.editor .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 3px solid #323292;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.editor .buttons > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.editor .buttons > div span {
+  margin-right: 0.5rem;
+  color: #323292;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.editor .buttons > div input {
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
+.editor .buttons > div input[type="color"] {
+  border: 0.15rem solid #323292;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  cursor: crosshair;
+}
+
+.editor .buttons > div input[type="number"] {
+  width: 46px;
+  height: 30px;
+  border: 0.15rem solid #7474cf;
+  border-radius: 0.15rem;
+  padding: 0.35rem;
+  padding-right: 0;
+  cursor: row-resize;
+}
+
+.editor .buttons > div input:focus, .editor .buttons > div input:hover {
+  border-color: #323292;
+}
+
+.editor .buttons > div select {
+  height: 30px;
+  padding: 0 0.25rem;
+  border: 0.15rem solid #7474cf;
+  border-radius: 0.15rem;
+  cursor: -webkit-grab;
+  cursor: grab;
+  font-family: "Poppins", sans-serif;
+  background: #f8f8f8;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
+.editor .buttons > div select option {
+  background: linear-gradient(45deg, #6161c9, #f8a575);
+  font-family: "Poppins", sans-serif;
+}
+
+.editor .buttons > div select:focus, .editor .buttons > div select:hover {
+  border-color: #323292;
+}
+
+.editor .buttons > div button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #f36614;
+  background-color: #f8f8f8;
+  border-radius: 0.15rem;
+  cursor: pointer;
+  border: 0.15rem solid #7474cf;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
+.editor .buttons > div button:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.editor .buttons > div button.active {
+  border-color: #f36614;
+}
+
+.editor .buttons > div button.active:hover {
+  border-color: #f36614;
+}
+
+.editor .buttons > div button:hover {
+  border-color: #323292;
+}
+/*# sourceMappingURL=style.css.map */
