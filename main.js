@@ -12,6 +12,8 @@ const elements = {
   btnItalic: document.querySelector("#btnItalic"),
   btnBold: document.querySelector("#btnBold"),
   btnPrint: document.querySelector("#printText"),
+  btnCopy: document.querySelector("#copyText"),
+  btnPaste: document.querySelector("#pasteText"),
 };
 const fonts = ["Arial", "Times New Roman", "Poppins", "Lobster"];
 const clearClassAlignBtns = () => {
@@ -20,6 +22,16 @@ const clearClassAlignBtns = () => {
   elements.btnAlignRight.classList.remove("active");
   elements.btnAlignJustify.classList.remove("active");
 };
+/* Kopyalama Fonksiyonu */
+const copyToClipboard = (str) => {
+  const el = document.createElement("input");
+  el.value = str;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand("copy");
+  document.body.removeChild(el);
+};
+
 /* Yazı Boyutu */
 let textSize = Number(elements.textSize.value);
 elements.textArea.style.fontSize = `${textSize}pt`;
@@ -99,6 +111,12 @@ elements.btnBold.addEventListener("click", (e) => {
     elements.textArea.style.fontWeight = "400";
     elements.btnBold.classList.remove("active");
   }
+});
+/* Tümünü Kopyala */
+elements.btnCopy.addEventListener("click", (e) => {
+  copyToClipboard(elements.textArea.innerText);
+  document.execCommand("copy");
+  alert("Metin başarı ile kopyalandı.");
 });
 /* Çıktı Al */
 elements.btnPrint.addEventListener("click", (e) => {
